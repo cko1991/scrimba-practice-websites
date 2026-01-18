@@ -1,0 +1,127 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+/*Variables for colors*/
+:root {
+  --custom-red: #E63946;
+  --custom-light: #F1FAEE;
+  --custom-aqua: #A8DADC;
+  --custom-blue: #457B9D;
+  --custom-dark-blue: #1D3557;
+}
+
+/*Set the font*/
+body {
+    margin: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    width: 100px;
+}
+
+#hero {
+    background-image: url("images/torshov.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: 343px;
+
+    display: flex;
+    flex-direction: column;
+    /*Ensures that the item block does not span the width of the page */
+    align-items: center; 
+    /*Justifies the contend to the center of the page*/
+    justify-content: center;
+}
+
+#hero-title {
+
+    color: var(--custom-light);
+    background-color: var(--custom-dark-blue);
+    font-size: 32px;
+    font-weight: 700;
+    padding: 3px 12px 5px 12px;
+    border-radius: 10px;
+}
+
+#hero-subtitle {
+    color: var(--custom-light);
+    background-color: var(--custom-blue);
+    font-weight: 700;
+    padding: 5px 28px 8px 28px;
+    border-radius: 10px;
+}
+
+#activities {
+    background-color: var(--custom-light);
+    color: var(--custom-dark-blue);
+    padding-top: 39px;
+}
+
+#activities-header {
+    font-size: 24px;
+    font-weight: 700;
+
+}
+
+.activity-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top:54px;
+}
+
+.activity-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 34px 38px 34px;
+}
+
+#guide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto 50px auto;
+    color: var(--custom-dark-blue);
+}
+
+#guide-container {
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    background-color: var(--custom-aqua);
+    padding: 23px 13px 23px 13px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 0px var(--custom-dark-blue);
+
+}
+
+#guide-img {
+    width: 180px;
+}
+
+#guide-details {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Util classes*/
+.circle-image {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.italic {
+    font-style: italic;
+}
