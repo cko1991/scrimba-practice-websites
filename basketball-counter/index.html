@@ -11,11 +11,21 @@
             <div class="score">
                 <h3 id="home-score">0</h3>
             </div>
+            <div class="score-buttons">
+                <button class="score-button" onclick="updateScore('home-score', 1)">+1</button>
+                <button class="score-button" onclick="updateScore('home-score', 2)">+2</button>
+                <button class="score-button" onclick="updateScore('home-score', 3)">+3</button>
+            </div>
         </div>
         <div class="score-container">
             <h3 class="score-title">GUEST</h3>
             <div class="score">
                 <h3 id="guest-score">0</h3>
+            </div>
+            <div class="score-buttons">
+                <button class="score-button" onclick="updateScore('guest-score', 1)">+1</button>
+                <button class="score-button" onclick="updateScore('guest-score', 2)">+2</button>
+                <button class="score-button" onclick="updateScore('guest-score', 3)">+3</button>
             </div>
         </div>
     </div>
